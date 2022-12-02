@@ -11,3 +11,5 @@ The code that talks to the Datasette API lives in this file:
 https://github.com/simonw/todomvc-datasette/blob/main/js/store.js
 
 This is the only file I changed from the original.
+
+![Animated screenshot showing two items being added, then one is checked off as done and the other is deleted.](https://user-images.githubusercontent.com/9599/205216443-6cc58a9e-0259-474b-bfa4-c64ad83ac6a3.gif)
