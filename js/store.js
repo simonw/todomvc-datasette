@@ -1,6 +1,7 @@
 /*jshint eqeqeq:false */
-// Ask user for token using browser prompt
-let TOKEN = prompt("Enter your token");
+// Signed token for the todomvc user on https://latest.datasette.io/
+// See https://github.com/simonw/todomvc-datasette/issues/2
+let TOKEN = 'dstok_eyJhIjoidG9kb212YyIsInRva2VuIjoiZHN0b2siLCJ0IjoxNjY5OTQ0NjgzfQ.wzSKl10MouQaKZ0FuTKEftNJko4';
 
 (function (window) {
   "use strict";
@@ -10,7 +11,7 @@ let TOKEN = prompt("Enter your token");
 
     // Ensure a table exists with this name
     let self = this;
-    self._dbName = `todo2_${name}`;
+    self._dbName = `todo_${name}`;
     fetch("https://latest.datasette.io/ephemeral/-/create", {
       method: "POST",
       mode: "cors",
